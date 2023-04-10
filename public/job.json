@@ -73,13 +73,12 @@
       "job_responsibility": "Collect, process, and analyze large datasets, build statistical models and machine learning algorithms, communicate findings to business stakeholders.",
       "educational_requirements": "Master's or PhD in Computer Science, Statistics, Mathematics, or related field",
       "experiences": "2+ years of experience in data science",
-      "contact_information": {
-        "phone": "555-9012",
-        "email": [
-          "hr@amazon.com",
-          "recruiting@amazon.com"
-        ]
-      }
+      "contact_information": [
+        {
+          "phone": "555-9012",
+          "email": "hr@amazon.com"
+        }
+      ]
     },
     {
       "id": "5e-6f-7g",
@@ -94,13 +93,12 @@
       "job_responsibility": "Collaborate with product managers and engineers to design and prototype user interfaces, conduct user research and usability testing to ensure user needs are met.",
       "educational_requirements": "Bachelor's or Master's degree in Design, Human-Computer Interaction or related field",
       "experiences": "3+ years of experience in UI/UX design",
-      "contact_information": {
-        "phone": "555-5678",
-        "email": [
-          "hr@apple.com",
-          "recruiting@apple.com"
-        ]
-      }
+      "contact_information": [
+        {
+          "phone": "555-5678",
+          "email": "hr@apple.com"
+        }
+      ]
     },
     {
       "id": "6f-7g-8h",
@@ -115,13 +113,12 @@
       "job_responsibility": "Design, develop, and maintain software applications and services, collaborate with cross-functional teams to identify and solve complex software problems.",
       "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
       "experiences": "5+ years of experience in software engineering",
-      "contact_information": {
-        "phone": "555-1234",
-        "email": [
-          "hr@google.com",
-          "recruiting@google.com"
-        ]
-      }
+      "contact_information": [
+        {
+          "phone": "555-1234",
+          "email": "hr@google.com"
+        }
+      ]
     }
   ]
 }

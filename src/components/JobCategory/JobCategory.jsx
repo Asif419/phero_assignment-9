@@ -4,7 +4,7 @@ const JobCategory = ({ category }) => {
   const { logo, name, jobs_available } = category;
   return (
     <div className='bg-indigo-50 rounded-md p-2 md:p-5 py-4'>
-      <div className='mb-5'>
+      <div className='mb-8'>
         <img className='bg-indigo-100 p-2 rounded-md' src={logo} alt="" />
       </div>
       <div>

@@ -25,9 +25,11 @@ const FeaturedJob = ({ showedJob }) => {
           <p className='text-sm text-gray-500'>{salary}</p>
         </div>
       </div>
-      <Link to={`job-details/${id}`}>
-        <button className='job-details-btn'>View Details</button>
-      </Link>
+      <div>
+        <Link to={`job-details/${id}`}>
+          <button className='job-details-btn'>View Details</button>
+        </Link>
+      </div>
     </div>
   );
 };
