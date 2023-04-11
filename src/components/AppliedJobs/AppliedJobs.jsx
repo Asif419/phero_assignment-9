@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { AppliedJobContext, AvailableJobContext } from '../Layout/Main';
 import { getAppliedList } from '../Utilities/Fakedb';
 import { useLoaderData } from 'react-router-dom';
+import Banner from '../Banner/Banner';
 
 const AppliedJobs = () => {
   const availableJobs = useLoaderData();
@@ -19,12 +20,14 @@ const AppliedJobs = () => {
       }
       setAppliedJobs(fakeAppliedJob);
     }
-    console.log(fakeAppliedJob);
   }, [availableJobs]);
 
   return (
     <div>
-      
+      <Banner>Applied Jobs</Banner>
+      <div className='details-container'>
+        <p>{appliedJobs.length}</p>
+      </div>
     </div>
   );
 };

@@ -24,7 +24,7 @@ const FeaturedJobs = () => {
             ></FeaturedJob>)
           }
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center mb-5'>
           {
             showMore ? (<button className='btn job-btn' onClick={() => setShowMore(!showMore)}>Show Less</button>) : (<button className='btn job-btn' onClick={() => setShowMore(!showMore)}>Show More</button>)
           }

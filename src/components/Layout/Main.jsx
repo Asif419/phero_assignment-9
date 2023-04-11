@@ -11,22 +11,6 @@ const Main = () => {
   const [availableJobs, setAvailableJobs] = useState([]);
   const [appliedJobs, setAppliedJobs] = useState([]);
 
-  // useEffect(() => {
-  //   const appliedListsDb = getAppliedList();
-  //   const fakeAppliedJob = [];
-  //   if (appliedJobs.length == 0) {
-  //     for (const id in appliedListsDb) {
-  //       const job = availableJobs.find(availableJob => availableJob.id === id);
-  //       if (job) {
-  //         fakeAppliedJob.push(job);
-  //       }
-  //     }
-  //     setAppliedJobs(fakeAppliedJob);
-  //   }
-  //   console.log(appliedJobs);
-  // }, [availableJobs]);
-
-
   return (
     <>
       <AvailableJobContext.Provider value={[availableJobs, setAvailableJobs]}>

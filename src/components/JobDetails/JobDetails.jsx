@@ -13,14 +13,20 @@ const JobDetails = () => {
 
   const addAppliedJobs = () => {
     const appliedListsDb = getAppliedList();
-    const alreadyApplied = appliedJobs.find(aj => aj.id === job.id);
+    // const alreadyApplied = appliedJobs.find(aj => aj.id === job.id);
+    let toastShown = false;
     for (const id in appliedListsDb) {
-      if (id === job.id) {
-        toast('You have already applied.');
+      if (id === job.id && (!toastShown)) {
+        toast('You have already applied 🔥');
+        toastShown = true;
       }
     }
+    if (!toastShown) {
+      toast('Congratulations! Application done 🆗')
+      toastShown = false;
+    }
   }
-  
+
   return (
     <div>
       <Banner>Job Details</Banner>
