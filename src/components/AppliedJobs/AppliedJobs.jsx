@@ -57,7 +57,7 @@ const AppliedJobs = () => {
   return (
     <div>
       <Banner>Applied Jobs</Banner>
-      <div className='flex flex-col gap-3 details-container mt-5 md:mt-10'>
+      <div className='flex flex-col gap-3 details-container mt-5 md:mt-10 min-h-[45vh]'>
         <div className='flex justify-center md:justify-end gap-2'>
           <button onClick={() => {
             setRemoteJob(!remoteJob)
