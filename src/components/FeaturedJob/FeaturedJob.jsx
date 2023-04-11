@@ -12,8 +12,8 @@ const FeaturedJob = ({ showedJob }) => {
       <p className='font-bold'>{job_title}</p>
       <p className='font-light tracking-wide	'>{company_name}</p>
       <div className='flex gap-2 py-2'>
-        <button className='border border-indigo-300 text-indigo-600 px-3 font-medium text-sm py-1 rounded-lg bg-none disabled'>{remote_or_onsite}</button>
-        <button className='border border-indigo-300 text-indigo-600 px-3 font-medium text-sm py-1 rounded-lg bg-none disabled'>{fulltime_or_parttime}</button>
+        <button className='job-type-btn'>{remote_or_onsite}</button>
+        <button className='job-type-btn'>{fulltime_or_parttime}</button>
       </div>
       <div className='flex gap-3'>
         <div className='flex items-center'>

@@ -6,7 +6,7 @@ import { addToDb, getAppliedList } from '../Utilities/Fakedb';
 import { AppliedJobContext } from '../Layout/Main';
 import toast from 'react-hot-toast';
 
-const JobDetails = () => {
+const JobDetails = ({applied}) => {
   const job = useLoaderData();
   const { id, logo, job_title, company_name, remote_or_onsite, location, fulltime_or_parttime, salary, job_description, job_responsibility, educational_requirements, experiences, contact_information } = job;
   const [appliedJobs, setAppliedJobs] = useContext(AppliedJobContext);
@@ -95,7 +95,7 @@ const JobDetails = () => {
             <button onClick={() => {
               addAppliedJobs()
               addToDb(id)
-            }} className='btn job-btn w-full'>Apply Now</button>
+            }} className={!applied ? 'btn job-btn w-full' : 'btn job-btn-two w-full'}>{ applied ? 'Applied' : 'Apply Now'}</button>
           </div>
         </div>
       </div>
